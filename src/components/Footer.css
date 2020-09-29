@@ -1,0 +1,18 @@
+.footer{
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.copyright{
+    color: #fff;
+    font-weight: 300;
+}
+
+@media only screend and (max-width: 600px){
+    .footer{
+        height: 100px;
+    }
+}

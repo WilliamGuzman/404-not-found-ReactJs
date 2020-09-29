@@ -1,0 +1,62 @@
+.objects img {
+  z-index: 90;
+  pointer-events: none;
+}
+
+.object_rocket {
+  z-index: 95;
+  position: absolute;
+  transform: translateX(0);
+  top: 90%;
+  pointer-events: none;
+  animation: rocket-movement 120s infinite;
+}
+
+.object_earth {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  z-index: 90;
+}
+
+.object_moon {
+  position: absolute;
+  top: 12%;
+  left: 25%;
+}
+
+.box_astronaut {
+  z-index: 110;
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  animation: astronaut-box-movement 60s infinite alternate;
+}
+
+.object_astronaut {
+  animation: astronaut-movement 60s infinite;
+}
+
+@keyframes rocket-movement {
+  100% {
+    transform: translate(1200px, -600px);
+  }
+}
+
+@keyframes astronaut-box-movement {
+  100% {
+    transform: translate(-200px, -100px);
+  }
+}
+
+@keyframes astronaut-movement {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .object_astronaut {
+    width: 100%;
+  }
+}
